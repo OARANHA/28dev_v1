@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+    
+    /* Modo Light (padrão) */
+    --background: 0 0% 100%; /* Branco */
+    --foreground: 0 0% 9%; /* Preto quase puro */
+    
+    --primary: 12 100% 60%; /* Laranja vibrante #FF4500 */
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 195 100% 50%; /* Azul elétrico #00BFFF */
+    --secondary-foreground: 0 0% 100%;
+    
+    --accent: 90 100% 49%; /* Verde limão #7CFC00 */
+    --accent-foreground: 0 0% 9%;
+    
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 9%;
+    
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 12 100% 60%;
+  }
+
+  .dark {
+    /* Modo Dark - Cores P3ZERO: Preto, Azul e Laranja */
+    --background: 0 0% 3%; /* Preto quase puro #0A0A0A */
+    --foreground: 0 0% 98%; /* Branco quase puro */
+    
+    --primary: 12 100% 60%; /* Laranja vibrante #FF4500 */
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 195 100% 50%; /* Azul elétrico #00BFFF */
+    --secondary-foreground: 0 0% 100%;
+    
+    --accent: 90 100% 49%; /* Verde limão #7CFC00 */
+    --accent-foreground: 0 0% 3%;
+    
+    --muted: 0 0% 9%; /* Cinza muito escuro */
+    --muted-foreground: 0 0% 65%;
+    
+    --card: 0 0% 9%; /* Cartões escuros */
+    --card-foreground: 0 0% 98%;
+    
+    --border: 0 0% 15%; /* Bordas escuras */
+    --input: 0 0% 15%;
+    --ring: 12 100% 60%;
+  }
+}
+
+
+
+img {
+  object-position: top;
+}
+
+.fixed {
+  position: fixed;
+}
