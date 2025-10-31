@@ -1,12 +1,13 @@
-# P3ZERO - Landing Page de Alta Conversão
+# 28dev_v1 - Plataforma de Soluções Digitais P3ZERO
 
 ## 🎯 Visão Geral
 
-Landing page otimizada para conversão inspirada no docpix.net, desenvolvida com técnicas avançadas de copywriting persuasivo e elementos estratégicos para maximizar a captação de leads qualificados.
+Este repositório contém o desenvolvimento completo da **Plataforma P3ZERO** - uma solução abrangente de marketing digital que combina frontend otimizado para conversão com uma plataforma backend completa.
 
-**URL de Produção FINAL (V2)**: https://iagriq0k8o1t.space.minimax.io
-**URL de Produção V2 (Funcional)**: https://gbwwvo6n8ynw.space.minimax.io
-**URL de Produção V1 (Inicial)**: https://kumene4axj69.space.minimax.io
+**🚀 URLs de Produção:**
+- **Frontend P3ZERO (Dark Mode)**: https://iv3q097yuq5y.space.minimax.io
+- **Backend Platform**: https://r7h8ls7jyx2g.space.minimax.io
+- **GitHub Repository**: https://github.com/OARANHA/28dev_v1
 
 ---
 
@@ -227,7 +228,103 @@ Landing page otimizada para conversão inspirada no docpix.net, desenvolvida com
 
 ---
 
-## 📁 Estrutura do Projeto
+## 📁 Estrutura Completa do Projeto
+
+```
+28dev_v1/
+├── p3zero-landing/          # 🎨 Frontend P3ZERO (Dark Mode)
+│   ├── src/
+│   │   ├── components/      # Componentes React
+│   │   │   ├── Header.tsx
+│   │   │   ├── HeroSection.tsx
+│   │   │   ├── PricingSection.tsx
+│   │   │   ├── Chatbot.tsx
+│   │   │   ├── LeadModal.tsx
+│   │   │   ├── ROICalculator.tsx
+│   │   │   └── ...
+│   │   ├── App.tsx
+│   │   └── index.css
+│   ├── public/
+│   │   └── logo-p3zero.png
+│   ├── tailwind.config.js
+│   └── package.json
+│
+└── 28-zero-platform/        # ⚙️ Backend Full-Stack Platform
+    ├── src/
+    │   ├── components/      # Componentes Admin
+    │   ├── pages/          # Páginas da Plataforma
+    │   ├── contexts/       # Contextos (Auth, etc.)
+    │   ├── hooks/          # Custom Hooks
+    │   └── lib/            # Utilitários
+    ├── public/
+    └── package.json
+```
+
+---
+
+## 🎨 Frontend P3ZERO
+
+### ✨ Características Principais
+
+- **🎭 Modo Dark**: Design moderno em cores preto, azul e laranja
+- **📱 Design Responsivo**: Otimizado para todos os dispositivos
+- **🚀 Alta Conversão**: Baseado em análise do docpix.net
+- **🤖 Chatbot Inteligente**: Assistente virtual integrado
+- **📊 Calculadora ROI**: Ferramenta de cálculo interativa
+- **💰 Seção de Preços**: 3 planos (Essencial, Crescimento, Dominação)
+- **📝 Modal de Leads**: Captura de leads otimizada
+
+### 🎨 Esquema de Cores (Dark Mode)
+
+```css
+/* Modo Dark - Cores P3ZERO */
+--background: 0 0% 3%;        /* Preto quase puro */
+--foreground: 0 0% 98%;       /* Branco quase puro */
+--primary: 12 100% 60%;       /* Laranja vibrante #FF4500 */
+--secondary: 195 100% 50%;    /* Azul elétrico #00BFFF */
+--accent: 90 100% 49%;        /* Verde limão #7CFC00 */
+```
+
+### 🛠 Tecnologias Frontend
+
+- **React 18.3.1** + TypeScript
+- **Tailwind CSS** para estilização
+- **Vite** para build e desenvolvimento
+- **Lucide Icons** para ícones
+- **CSS Variables** para tema dark mode
+
+---
+
+## ⚙️ Backend Platform (28-zero-platform)
+
+### 🏗 Arquitetura
+
+- **Frontend**: React + TypeScript + Tailwind
+- **Backend**: Supabase (PostgreSQL + Auth + Storage + Edge Functions)
+- **Autenticação**: Sistema completo com 2FA
+- **Banco de Dados**: 8 tabelas principais com RLS
+
+### 📊 Banco de Dados
+
+| Tabela | Descrição |
+|--------|-----------|
+| `profiles` | Perfis de usuários com roles e 2FA |
+| `landing_pages` | Landing pages com métricas |
+| `page_components` | Componentes do editor drag-and-drop |
+| `chatbots` | Configurações de agentes AI |
+| `conversations` | Logs de conversas |
+| `leads` | Leads capturados |
+| `integrations` | Integrações externas |
+| `analytics` | Métricas e analytics |
+
+### 🔐 Segurança
+
+- **Row Level Security (RLS)**: Políticas de segurança no nível do banco
+- **Two-Factor Authentication (2FA)**: Para administradores
+- **JWT Authentication**: Tokens seguros
+- **HTTPS**: Comunicação criptografada
+
+---
 
 ```
 p3zero-landing/
